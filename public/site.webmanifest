@@ -1,0 +1,21 @@
+{
+  "name": "LIFO 2027 — Local Innovation Forum",
+  "short_name": "LIFO 2027",
+  "description": "Konferencia, kde sa kapitál stretne so samosprávami pripravenými na investíciu. 11. 2. 2027, Hotel Clarion Bratislava.",
+  "icons": [
+    {
+      "src": "/android-chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0C1223",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/"
+}

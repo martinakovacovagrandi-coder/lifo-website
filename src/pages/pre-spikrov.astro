@@ -1,0 +1,49 @@
+---
+import { getEntry } from "astro:content";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import Header from "~/components/Header.astro";
+import Footer from "~/components/Footer.astro";
+
+const locale = "sk" as const;
+const entry = await getEntry("pages", "sk/for-speakers");
+const { Content } = await entry!.render();
+const { title, description, ctaPrimary } = entry!.data;
+---
+
+<BaseLayout title={`${title} — LIFO 2027`} description={description} locale={locale}>
+  <Header locale={locale} />
+
+  <main id="main">
+    <section class="bg-lifo-navy py-16 text-lifo-paper sm:py-24">
+      <div class="container-lifo">
+        <p class="mb-3 font-display text-sm font-semibold uppercase tracking-[0.2em] text-lifo-paper/60">
+          LIFO 2027
+        </p>
+        <h1 class="mb-6 font-display text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+          {title}
+        </h1>
+        {description && <p class="max-w-2xl text-lg text-lifo-paper/85 sm:text-xl">{description}</p>}
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-20">
+      <div class="container-lifo">
+        <article class="prose-lifo max-w-3xl">
+          <Content />
+        </article>
+
+        {
+          ctaPrimary && (
+            <div class="mt-12 max-w-3xl">
+              <a href={ctaPrimary.href} class="btn-primary">
+                {ctaPrimary.label} →
+              </a>
+            </div>
+          )
+        }
+      </div>
+    </section>
+  </main>
+
+  <Footer locale={locale} />
+</BaseLayout>

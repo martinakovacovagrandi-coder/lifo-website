@@ -1,0 +1,93 @@
+---
+interface Props {
+  locale: "sk" | "en";
+}
+
+const { locale } = Astro.props;
+const isSk = locale === "sk";
+
+const navItems = isSk
+  ? [
+      { label: "Domov", href: "/" },
+      { label: "Pre sponzorov", href: "/pre-sponzorov" },
+      { label: "Pre spíkrov", href: "/pre-spikrov" },
+      { label: "Kontakt", href: "/kontakt" },
+    ]
+  : [
+      { label: "Home", href: "/en" },
+      { label: "For sponsors", href: "/en/for-sponsors" },
+      { label: "For speakers", href: "/en/for-speakers" },
+      { label: "Contact", href: "/en/contact" },
+    ];
+
+const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
+const altPath = isSk
+  ? `/en${currentPath === "/" ? "" : currentPath}`
+  : currentPath.replace(/^\/en/, "") || "/";
+---
+
+<header class="sticky top-0 z-40 border-b border-lifo-ink/10 bg-lifo-paper/95 backdrop-blur">
+  <div class="container-lifo flex h-16 items-center justify-between">
+    <a href={isSk ? "/" : "/en"} class="flex items-center gap-2" aria-label="LIFO 2027">
+      <img src="/logos/lifo-logo.svg" alt="" width="36" height="36" class="block" />
+      <span class="font-display text-lg font-bold tracking-tight">LIFO 2027</span>
+    </a>
+
+    <nav class="hidden md:block" aria-label={isSk ? "Hlavná navigácia" : "Main navigation"}>
+      <ul class="flex items-center gap-8">
+        {
+          navItems.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class={`text-sm font-medium hover:text-lifo-magenta ${
+                  currentPath === item.href.replace(/\/$/, "")
+                    ? "text-lifo-magenta"
+                    : "text-lifo-ink"
+                }`}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a
+        href={altPath}
+        class="rounded-full border border-lifo-ink/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider hover:border-lifo-magenta hover:text-lifo-magenta"
+        aria-label={isSk ? "Switch to English" : "Prepnúť na slovenčinu"}
+      >
+        {isSk ? "EN" : "SK"}
+      </a>
+
+      <details class="relative md:hidden">
+        <summary class="cursor-pointer list-none p-2" aria-label={isSk ? "Otvoriť menu" : "Open menu"}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </summary>
+        <nav
+          class="absolute right-0 top-full mt-2 w-56 rounded-lg border border-lifo-ink/10 bg-lifo-paper p-4 shadow-lg"
+          aria-label={isSk ? "Mobilná navigácia" : "Mobile navigation"}
+        >
+          <ul class="flex flex-col gap-3">
+            {
+              navItems.map((item) => (
+                <li>
+                  <a href={item.href} class="block text-sm font-medium hover:text-lifo-magenta">
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>

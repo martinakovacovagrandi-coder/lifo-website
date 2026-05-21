@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --lifo-magenta: #d6307a;
+    --lifo-teal: #36a2a8;
+    --lifo-ink: #0a0a0a;
+    --lifo-paper: #ffffff;
+    --lifo-navy: #0c1223;
+    --lifo-gradient: linear-gradient(135deg, var(--lifo-magenta) 0%, var(--lifo-teal) 100%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    @apply bg-lifo-paper text-lifo-ink font-body antialiased;
+    line-height: 1.55;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight;
+    line-height: 1.1;
+  }
+
+  h1 {
+    @apply text-4xl font-bold sm:text-5xl md:text-6xl;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-3xl font-bold sm:text-4xl;
+    letter-spacing: -0.015em;
+  }
+
+  h3 {
+    @apply text-xl font-semibold sm:text-2xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  a {
+    @apply underline-offset-4 transition-colors duration-150;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-2 outline-offset-2 outline-lifo-magenta;
+    outline-style: solid;
+  }
+
+  ::selection {
+    background: var(--lifo-magenta);
+    color: var(--lifo-paper);
+  }
+
+  /* Markdown content styling */
+  .prose-lifo h1 {
+    @apply mb-6 mt-8;
+  }
+
+  .prose-lifo h2 {
+    @apply mb-4 mt-10;
+  }
+
+  .prose-lifo h3 {
+    @apply mb-3 mt-6;
+  }
+
+  .prose-lifo p {
+    @apply mb-4;
+  }
+
+  .prose-lifo ul,
+  .prose-lifo ol {
+    @apply mb-4 ml-6 list-disc;
+  }
+
+  .prose-lifo ul li,
+  .prose-lifo ol li {
+    @apply mb-2;
+  }
+
+  .prose-lifo blockquote {
+    @apply my-6 border-l-4 border-lifo-magenta pl-6 italic text-lifo-ink/80;
+  }
+
+  .prose-lifo strong {
+    @apply font-semibold text-lifo-ink;
+  }
+
+  .prose-lifo table {
+    @apply my-6 w-full border-collapse;
+  }
+
+  .prose-lifo table th,
+  .prose-lifo table td {
+    @apply border-b border-lifo-ink/10 px-4 py-3 text-left;
+  }
+
+  .prose-lifo table th {
+    @apply bg-lifo-ink/5 font-semibold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-lifo-ink px-6 py-3 font-semibold text-lifo-paper transition-all duration-200 hover:scale-[1.02] hover:bg-lifo-magenta;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border-2 border-lifo-ink px-6 py-3 font-semibold text-lifo-ink transition-all duration-200 hover:scale-[1.02] hover:border-lifo-magenta hover:text-lifo-magenta;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-6 py-3 font-semibold text-lifo-ink underline-offset-4 hover:text-lifo-magenta hover:underline;
+  }
+
+  .container-lifo {
+    @apply mx-auto max-w-6xl px-6 sm:px-8;
+  }
+
+  .gradient-text {
+    background: var(--lifo-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}

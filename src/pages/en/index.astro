@@ -1,0 +1,177 @@
+---
+import { getEntry } from "astro:content";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import Header from "~/components/Header.astro";
+import Footer from "~/components/Footer.astro";
+
+const locale = "en" as const;
+const hero = await getEntry("pages", "en/hero");
+const about = await getEntry("pages", "en/about");
+const whyNow = await getEntry("pages", "en/why-now");
+const valuePillars = await getEntry("pages", "en/value-pillars");
+const aboutOrganizer = await getEntry("pages", "en/about-organizer");
+const eventDetails = await getEntry("pages", "en/event-details");
+
+const { Content: AboutContent } = await about!.render();
+const { Content: WhyNowContent } = await whyNow!.render();
+const { Content: ValuePillarsContent } = await valuePillars!.render();
+const { Content: AboutOrganizerContent } = await aboutOrganizer!.render();
+const { Content: EventDetailsContent } = await eventDetails!.render();
+
+const heroData = hero!.data;
+---
+
+<BaseLayout
+  title="LIFO 2027 — Local Innovation Forum"
+  description={heroData.tagline}
+  locale={locale}
+  ogImage="/og-image-1200x630-en.png"
+>
+  <Header locale={locale} />
+
+  <main id="main">
+    <section class="relative overflow-hidden bg-lifo-navy text-lifo-paper">
+      <div
+        class="absolute inset-0 opacity-30"
+        style="background: radial-gradient(circle at top left, var(--lifo-magenta), transparent 50%), radial-gradient(circle at bottom right, var(--lifo-teal), transparent 50%);"
+        aria-hidden="true"
+      >
+      </div>
+      <div class="container-lifo relative py-20 sm:py-28 md:py-36">
+        <div class="grid items-center gap-12 md:grid-cols-[1fr_2fr]">
+          <div class="flex justify-center md:justify-start">
+            <img
+              src="/logos/lifo-logo.svg"
+              alt="LIFO logo"
+              width="240"
+              height="240"
+              class="h-48 w-48 sm:h-56 sm:w-56 md:h-64 md:w-64"
+            />
+          </div>
+          <div>
+            <p class="mb-3 font-display text-sm font-semibold uppercase tracking-[0.2em] text-lifo-paper/60">
+              {heroData.subtitle}
+            </p>
+            <h1 class="mb-6 font-display text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+              {heroData.title}
+            </h1>
+            <p class="mb-8 max-w-2xl text-xl leading-relaxed text-lifo-paper/90 sm:text-2xl">
+              {heroData.tagline}
+            </p>
+            <p class="mb-10 text-lg font-semibold">
+              <span class="gradient-text">{heroData.date}</span>
+              <span class="text-lifo-paper/60"> · </span>
+              <span>{heroData.venue}</span>
+            </p>
+            <div class="flex flex-wrap gap-3">
+              {
+                heroData.ctaPrimary && (
+                  <a
+                    href={heroData.ctaPrimary.href}
+                    class="inline-flex items-center justify-center rounded-full bg-lifo-paper px-6 py-3 font-semibold text-lifo-ink transition-all duration-200 hover:scale-[1.02] hover:bg-lifo-magenta hover:text-lifo-paper"
+                  >
+                    {heroData.ctaPrimary.label} →
+                  </a>
+                )
+              }
+              {
+                heroData.ctaSecondary && (
+                  <a
+                    href={heroData.ctaSecondary.href}
+                    class="inline-flex items-center justify-center rounded-full border-2 border-lifo-paper/30 px-6 py-3 font-semibold text-lifo-paper transition-all duration-200 hover:scale-[1.02] hover:border-lifo-paper"
+                  >
+                    {heroData.ctaSecondary.label} →
+                  </a>
+                )
+              }
+              {
+                heroData.ctaTertiary && (
+                  <a
+                    href={heroData.ctaTertiary.href}
+                    class="inline-flex items-center justify-center px-6 py-3 font-semibold text-lifo-paper/80 underline-offset-4 hover:text-lifo-paper hover:underline"
+                  >
+                    {heroData.ctaTertiary.label}
+                  </a>
+                )
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-lifo-paper py-20 sm:py-24">
+      <div class="container-lifo">
+        <div class="prose-lifo max-w-3xl"><AboutContent /></div>
+      </div>
+    </section>
+
+    <section class="border-y border-lifo-ink/10 bg-lifo-ink/[0.02] py-20 sm:py-24">
+      <div class="container-lifo">
+        <div class="prose-lifo max-w-3xl"><WhyNowContent /></div>
+      </div>
+    </section>
+
+    <section class="py-20 sm:py-24">
+      <div class="container-lifo">
+        <div class="prose-lifo max-w-3xl"><ValuePillarsContent /></div>
+      </div>
+    </section>
+
+    <section class="bg-lifo-navy py-20 text-lifo-paper sm:py-24">
+      <div class="container-lifo">
+        <div class="prose-lifo max-w-3xl prose-lifo-dark"><AboutOrganizerContent /></div>
+      </div>
+    </section>
+
+    <section class="py-20 sm:py-24">
+      <div class="container-lifo">
+        <div class="prose-lifo max-w-3xl"><EventDetailsContent /></div>
+      </div>
+    </section>
+
+    <section class="bg-lifo-gradient py-16 text-lifo-paper" style="background: var(--lifo-gradient);">
+      <div class="container-lifo text-center">
+        <h2 class="mb-4 text-3xl font-bold sm:text-4xl">Join LIFO 2027</h2>
+        <p class="mx-auto mb-8 max-w-xl text-lg text-lifo-paper/90">
+          As a partner, speaker, or attendee — we're building the space for execution.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <a
+            href="/en/for-sponsors"
+            class="inline-flex items-center justify-center rounded-full bg-lifo-ink px-6 py-3 font-semibold text-lifo-paper transition-all hover:scale-[1.02]"
+            >Become a partner →</a
+          >
+          <a
+            href="/en/for-speakers"
+            class="inline-flex items-center justify-center rounded-full border-2 border-lifo-paper px-6 py-3 font-semibold text-lifo-paper transition-all hover:scale-[1.02] hover:bg-lifo-paper hover:text-lifo-ink"
+            >Speak at LIFO →</a
+          >
+          <a
+            href="/en/contact"
+            class="inline-flex items-center justify-center px-6 py-3 font-semibold text-lifo-paper underline-offset-4 hover:underline"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer locale={locale} />
+</BaseLayout>
+
+<style>
+  .prose-lifo-dark :global(h1),
+  .prose-lifo-dark :global(h2),
+  .prose-lifo-dark :global(h3),
+  .prose-lifo-dark :global(strong) {
+    color: var(--lifo-paper);
+  }
+  .prose-lifo-dark :global(p) {
+    color: rgb(255 255 255 / 0.85);
+  }
+  .prose-lifo-dark :global(blockquote) {
+    color: rgb(255 255 255 / 0.85);
+    border-color: var(--lifo-magenta);
+  }
+</style>

@@ -1,0 +1,76 @@
+---
+interface Props {
+  locale: "sk" | "en";
+}
+
+const { locale } = Astro.props;
+const isSk = locale === "sk";
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-lifo-ink/10 bg-lifo-ink text-lifo-paper">
+  <div class="container-lifo py-12">
+    <div class="grid gap-10 md:grid-cols-3">
+      <div>
+        <div class="mb-3 flex items-center gap-2">
+          <img src="/logos/lifo-logo-white.svg" alt="" width="32" height="32" class="block" />
+          <span class="font-display text-lg font-bold">LIFO 2027</span>
+        </div>
+        <p class="text-sm leading-relaxed text-lifo-paper/70">
+          {
+            isSk
+              ? "Local Innovation Forum — konferencia, kde sa kapitál stretne so samosprávami pripravenými na investíciu."
+              : "Local Innovation Forum — the conference where capital meets municipalities ready for investment."
+          }
+        </p>
+      </div>
+
+      <div>
+        <h3 class="mb-3 font-display text-sm font-semibold uppercase tracking-wider text-lifo-paper/60">
+          {isSk ? "Event" : "Event"}
+        </h3>
+        <ul class="space-y-2 text-sm text-lifo-paper/80">
+          <li>{isSk ? "11. február 2027" : "February 11, 2027"}</li>
+          <li>Hotel Clarion Bratislava</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-3 font-display text-sm font-semibold uppercase tracking-wider text-lifo-paper/60">
+          {isSk ? "Odkazy" : "Links"}
+        </h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a
+              href={isSk ? "/pre-sponzorov" : "/en/for-sponsors"}
+              class="text-lifo-paper/80 hover:text-lifo-magenta"
+              >{isSk ? "Pre sponzorov" : "For sponsors"}</a
+            >
+          </li>
+          <li>
+            <a
+              href={isSk ? "/pre-spikrov" : "/en/for-speakers"}
+              class="text-lifo-paper/80 hover:text-lifo-magenta"
+              >{isSk ? "Pre spíkrov" : "For speakers"}</a
+            >
+          </li>
+          <li>
+            <a
+              href={isSk ? "/kontakt" : "/en/contact"}
+              class="text-lifo-paper/80 hover:text-lifo-magenta"
+              >{isSk ? "Kontakt" : "Contact"}</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10 flex flex-col items-start justify-between gap-4 border-t border-lifo-paper/10 pt-6 text-xs text-lifo-paper/50 md:flex-row md:items-center">
+      <p>© {year} LIFO — Local Innovation Forum. {isSk ? "Všetky práva vyhradené." : "All rights reserved."}</p>
+      <p>
+        {isSk ? "Pripravujeme " : "We're preparing "}
+        <a href="https://urbanlama.eu" class="hover:text-lifo-magenta">Urban Láma</a>.
+      </p>
+    </div>
+  </div>
+</footer>

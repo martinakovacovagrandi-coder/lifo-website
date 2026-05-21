@@ -1,0 +1,88 @@
+---
+import "~/styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  locale?: "sk" | "en";
+  ogImage?: string;
+  canonicalPath?: string;
+}
+
+const {
+  title,
+  description = "LIFO 2027 — Local Innovation Forum. Konferencia, kde sa kapitál stretne so samosprávami pripravenými na investíciu. 11. 2. 2027, Hotel Clarion Bratislava.",
+  locale = "sk",
+  ogImage = "/og-image-1200x630.png",
+  canonicalPath,
+} = Astro.props;
+
+const siteUrl = "https://lifo.urbanlama.eu";
+const canonical = canonicalPath ? `${siteUrl}${canonicalPath}` : Astro.url.href;
+const alternateLocale = locale === "sk" ? "en" : "sk";
+const currentPath = Astro.url.pathname;
+const alternatePath =
+  locale === "sk"
+    ? `/en${currentPath === "/" ? "" : currentPath}`
+    : currentPath.replace(/^\/en/, "") || "/";
+---
+
+<!doctype html>
+<html lang={locale === "sk" ? "sk-SK" : "en-US"}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <link rel="alternate" hreflang={locale === "sk" ? "sk-SK" : "en-US"} href={canonical} />
+    <link
+      rel="alternate"
+      hreflang={alternateLocale === "sk" ? "sk-SK" : "en-US"}
+      href={`${siteUrl}${alternatePath}`}
+    />
+    <link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${siteUrl}${ogImage}`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={locale === "sk" ? "sk_SK" : "en_US"} />
+    <meta property="og:site_name" content="LIFO 2027" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${siteUrl}/twitter-card-1200x600.png`} />
+
+    <meta name="theme-color" content="#0C1223" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a
+      href="#main"
+      class="absolute left-2 top-2 z-50 -translate-y-20 rounded-full bg-lifo-ink px-4 py-2 text-lifo-paper transition-transform focus:translate-y-0"
+    >
+      {locale === "sk" ? "Preskočiť na obsah" : "Skip to content"}
+    </a>
+    <slot />
+  </body>
+</html>
