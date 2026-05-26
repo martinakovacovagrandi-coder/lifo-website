@@ -9,7 +9,7 @@ order: 5
 
 Projekt vedie **Martina Grandi**, ako projekt manažérka spolupracovala na najväčších strategických investíciách na Slovensku za posledných 10 rokov:
 ---
-> "Regióny netrpia nedostatkom vízií, ale chronickým zlyhaním realizácie. LIFO je miesto, kde tento nedostatok zatvoríme — konkrétnym matchmakingom, nie ďalšou panelovou diskusiou."
+> "Regióny netrpia nedostatkom vízií, ale chronickým zlyhaním realizácie. LIFO je miesto, kde tento nedostatok odstránime — konkrétnym matchmakingom partnerov a zástupcov regiónov, nie len ďalšou panelovou diskusiou."
 >
 > *— Martina Grandi, spoluzakladateľka LIFO*
 >
