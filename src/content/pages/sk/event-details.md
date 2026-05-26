@@ -10,7 +10,7 @@ order: 6
 | | |
 |---|---|
 | **Dátum** | 11. február 2027 |
-| **Miesto** | Hotel Clarion Bratislava |
+| **Miesto** | Bratislava - miesto konania bude potvrdené|
 | **Formát** | 1-dňová pracovná konferencia |
 | **Hlavné bloky** | Keynote · Investičné panely · Workshop pre samosprávy · Matchmaking · Networking |
 | **Účastníci** | ~100+ zástupcov samospráv + investori + experti |
