@@ -1,5 +1,5 @@
 ---
-title: "Pre spíkrov"
+title: "Program konferencie"
 description: "Hľadáme expertov, ktorí dokážu doručiť konkrétne know-how — nie sebaprezentáciu. Vystúpte na LIFO 2027."
 locale: sk
 order: 1
@@ -8,17 +8,17 @@ ctaPrimary:
   href: "/kontakt?segment=spiker"
 ---
 
-# Pre spíkrov
+# Pre rečníkov
 
 **Hľadáme expertov, ktorí dokážu doručiť konkrétne know-how — nie sebaprezentáciu.**
 
 ## Koho hľadáme
 
-LIFO je **working conference**, nie inšpiratívny event. Hľadáme rečníkov, ktorí majú **reálnu skúsenosť** s niečím z nasledujúcich oblastí:
+LIFO je **working conference**, nie inšpiratívny event. Hľadáme rečníkov, ktorí majú **reálnu skúsenosť** z nasledujúcich oblastí:
 
 - **PPP, EPC a alternatívne modely financovania** verejných projektov
 - **Investičná pripravenosť samospráv** — pasportizácia lokalít, územné plánovanie, due diligence
-- **Reálne case studies** úspešnej implementácie projektov (SR / ČR / PL / AT / DE)
+- **Reálne case studies** úspešnej implementácie projektov (SR / ČR / PL / AT / DE / EU) 
 - **Energetické komunity, smart city, dekarbonizácia** v praktickej rovine
 - **Transformácia regiónov** v okolí giga-investícií (Volvo, JLR a podobné)
 - **Verejné obstarávanie a legislatíva** v praktickej rovine
@@ -53,6 +53,6 @@ Pošli nám:
 3. **Konkrétny case study alebo reálnu skúsenosť**, na ktorej je vystúpenie postavené
 4. **LinkedIn alebo webovú stránku** pre kontext
 
-Ozveme sa do **5 pracovných dní**.
+Ozveme sa do **okamžite ako to bude možné**.
 
 [Prihlásiť sa ako rečník →](/kontakt?segment=spiker)
