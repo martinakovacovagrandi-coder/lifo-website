@@ -1,5 +1,5 @@
 ---
-title: "Partneri"
+title: "Pre partnerov"
 description: "Stante sa partnerom LIFO 2027 a získajte priamy prístup k rozhodovateľom v samosprávach a investičnom prostredí."
 locale: sk
 order: 1
