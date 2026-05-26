@@ -1,33 +1,26 @@
 ---
-title: "Čo je LIFO"
-description: "Konferencia, ktorá rieši konkrétnu medzeru: regióny majú projekty, súkromný sektor má kapitál — stretnúť sa to dokáže iba živelne alebo vôbec."
+title: "LIFO - LOCAL INNOVATION FORUM"
+description: "Konferencia, ktorá má ambíciu riešiť prepojenie regiónov a súkromného sektoru.  Regióny majú svoje projekty, súkromný sektor má kapitál, LIFO ponúka priestor na výmenu informácií, nadviazanie kontaktov a rozbeh nových projektov."
 locale: sk
 order: 2
 ---
 
-# Čo je LIFO
-
-**Local Innovation Forum (LIFO)** je B2B konferencia, ktorá rieši konkrétnu medzeru:
-
-> **Regióny majú projekty. Súkromný sektor má kapitál. Stretnúť sa to ale dokáže iba živelne — alebo vôbec.**
-
-LIFO túto medzeru zatvára cez **riadený formát** — bez výplňových panelov, bez "ďalšieho networkingu". Cieľom účastníka nie je odísť s brožúrkou, ale s **konkrétnym kontaktom**, **blueprint-om** alebo **overeným modelom financovania**.
+# LIFO - Local Innovation Forum vytvára priestor, kde informácie získate z prvej ruky, máme ambíciu priniesť praktické poznatky, ale aj inšpiratívne príbehy a konkrétne know-how, ľudia z praxe pre ľudí z praxe. Cieľom nie je odísť s informačnou brožúrkou, ale s **konkrétnym kontaktom**, **s blueprint-om** alebo **overeným modelom financovania**.
 
 ## Pre koho
 
 - **Primátori a starostovia** miest a obcí, ktorí hľadajú zdroje pre projekty mimo štátneho rozpočtu
 - **Investori, developeri, banky**, ktorí potrebujú prístup k pripraveným lokalitám a rozhodovateľom
 - **Ministerstvá a štátne agentúry**, ktoré tvoria legislatívny rámec
-- **Konzultanti a technologické firmy**, ktoré dodávajú nástroje a know-how
+- **Konzultanti a technologické firmy**, ktoré dodávajú nástroje, know-how a projektový manažment
 
 ## V čom je LIFO iný
 
 **LIFO nerieši "policy". Rieši "delivery".**
 
-| Iné konferencie               | LIFO                                                  |
-| ----------------------------- | ----------------------------------------------------- |
-| Panelové diskusie a vízie     | 20-minútové matchmaking stretnutia podľa kritérií      |
-| "Inšpiratívne" prednášky     | Konkrétne case studies z fungujúcich projektov         |
-| Generický networking          | Kurátorovaný zoznam účastníkov s overeným potenciálom |
-| Politicky zafarbené formáty   | Neutrálny odborný priestor                            |
-| Brožúra s odporúčaniami       | Blueprint s checklistom rizík a krokmi                |
+LIFO koncept                                                
+20-minútové matchmaking stretnutia podľa kritérií     |
+Konkrétne case studies z fungujúcich projektov        |
+Kurátorovaný zoznam účastníkov s overeným potenciálom |
+Neutrálny odborný priestor                            |
+Blueprint s checklistom rizík a krokmi                |
