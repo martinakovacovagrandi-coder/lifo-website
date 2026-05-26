@@ -25,4 +25,4 @@ Press kit pripravujeme. Ozvite sa nám.
 
 **Som starosta a chcem sa zúčastniť — ako si môžem zakúpiť vstupné?**
 Účasť pre samosprávy je v tejto fáze cez pozvánku. Predaj vstupeniek spustíme až po finalizácii programu. Sledujte web alebo sa prihláste na novinky.
-Napíšte nám svoj email a pošleme Vám pozvíínku hnď ako bude pripravená.
+Napíšte nám svoj email a pošleme Vám pozvánku hneď ako bude pripravená.
