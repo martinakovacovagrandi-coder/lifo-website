@@ -3,7 +3,7 @@ title: "LIFO 2027"
 subtitle: "Local Innovation Forum"
 tagline: "Nie ďalšia konferencia o regionálnom rozvoji. Priestor, kde sa kapitál stretne so samosprávami pripravenými na investíciu."
 date: "11. február 2027"
-venue: "Hotel Clarion Bratislava"
+venue: "Bratislava"
 ctaPrimary:
   label: "Stať sa partnerom"
   href: "/partneri"
@@ -23,4 +23,4 @@ order: 1
 
 Nie ďalšia konferencia o regionálnom rozvoji. Priestor, kde sa **kapitál** stretne so **samosprávami pripravenými na investíciu**.
 
-**11. február 2027 · Hotel Clarion Bratislava**
+**11. február 2027 · Bratislava**

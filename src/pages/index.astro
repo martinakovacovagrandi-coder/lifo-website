@@ -7,14 +7,10 @@ import Footer from "~/components/Footer.astro";
 const locale = "sk" as const;
 const hero = await getEntry("pages", "sk/hero");
 const about = await getEntry("pages", "sk/about");
-const whyNow = await getEntry("pages", "sk/why-now");
-const valuePillars = await getEntry("pages", "sk/value-pillars");
 const aboutOrganizer = await getEntry("pages", "sk/about-organizer");
 const eventDetails = await getEntry("pages", "sk/event-details");
 
 const { Content: AboutContent } = await about!.render();
-const { Content: WhyNowContent } = await whyNow!.render();
-const { Content: ValuePillarsContent } = await valuePillars!.render();
 const { Content: AboutOrganizerContent } = await aboutOrganizer!.render();
 const { Content: EventDetailsContent } = await eventDetails!.render();
 
@@ -105,24 +101,6 @@ const heroData = hero!.data;
       <div class="container-lifo">
         <div class="prose-lifo max-w-3xl">
           <AboutContent />
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY NOW -->
-    <section class="border-y border-lifo-ink/10 bg-lifo-ink/[0.02] py-20 sm:py-24">
-      <div class="container-lifo">
-        <div class="prose-lifo max-w-3xl">
-          <WhyNowContent />
-        </div>
-      </div>
-    </section>
-
-    <!-- VALUE PILLARS -->
-    <section class="py-20 sm:py-24">
-      <div class="container-lifo">
-        <div class="prose-lifo max-w-3xl">
-          <ValuePillarsContent />
         </div>
       </div>
     </section>

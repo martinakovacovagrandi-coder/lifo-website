@@ -10,8 +10,8 @@ order: 6
 | | |
 |---|---|
 | **Date** | February 11, 2027 |
-| **Venue** | Hotel Clarion Bratislava |
+| **Venue** | Bratislava — venue to be confirmed |
 | **Format** | One-day working conference |
 | **Main blocks** | Keynote · Investment panels · Municipal workshop · Matchmaking · Networking |
-| **Attendees** | ~150 municipal representatives + investors + experts |
+| **Attendees** | 100+ municipal representatives + investors + experts |
 | **Language** | Slovak · English (simultaneous interpretation for selected panels) |
