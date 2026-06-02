@@ -35,3 +35,6 @@ desktop.ini
 # Python build artifacts (z brand build skriptu)
 __pycache__/
 *.pyc
+
+# Sensitive business docs (moved to ../LIFO-private/)
+podklady/podklady platforma/
