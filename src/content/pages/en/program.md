@@ -1,6 +1,6 @@
 ---
-title: "For speakers"
-description: "We're looking for experts who can deliver concrete know-how — not self-promotion. Speak at LIFO 2027."
+title: "Program"
+description: "We're finalizing the LIFO 2027 program. Meanwhile, we're looking for experts who can deliver concrete know-how — not self-promotion."
 locale: en
 order: 1
 ctaPrimary:
@@ -8,7 +8,15 @@ ctaPrimary:
   href: "/en/contact?segment=speaker"
 ---
 
-# For speakers
+# LIFO 2027 Program
+
+> **The program is being finalized.** We'll publish the keynote and panels here as soon as speakers are confirmed. Watch this space or sign up for our newsletter.
+
+---
+
+## For prospective speakers
+
+**We're looking for experts who can deliver concrete know-how — not self-promotion.**
 
 **We're looking for experts who can deliver concrete know-how — not self-promotion.**
 

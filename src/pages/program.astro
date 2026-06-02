@@ -5,7 +5,7 @@ import Header from "~/components/Header.astro";
 import Footer from "~/components/Footer.astro";
 
 const locale = "sk" as const;
-const entry = await getEntry("pages", "sk/for-sponsors");
+const entry = await getEntry("pages", "sk/program");
 const { Content } = await entry!.render();
 const { title, description, ctaPrimary } = entry!.data;
 ---

@@ -6,10 +6,10 @@ date: "11. február 2027"
 venue: "Hotel Clarion Bratislava"
 ctaPrimary:
   label: "Stať sa partnerom"
-  href: "/pre-sponzorov"
+  href: "/partneri"
 ctaSecondary:
-  label: "Vystúpiť ako rečník"
-  href: "/pre-spikrov"
+  label: "Program & rečníci"
+  href: "/program"
 ctaTertiary:
   label: "Kontakt"
   href: "/kontakt"

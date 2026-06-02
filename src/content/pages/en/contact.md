@@ -31,7 +31,7 @@ LIFO is organized within a broader ecosystem currently preparing for launch. For
 Yes. Select "Partnership / sponsorship inquiry" in the form and we'll send detailed info within 5 days.
 
 **I'd like to speak — where do I send my proposal?**
-Through the same form, segment "Speaker application". Send a short bio + proposed topic + concrete case study. Details on the [For speakers](/en/for-speakers) page.
+Through the same form, segment "Speaker application". Send a short bio + proposed topic + concrete case study. Details on the [Program](/en/program) page.
 
 **I'm a journalist / media — where's the press kit?**
 The press kit is in preparation. Contact us via the form (segment "Media") and we'll send materials individually.

@@ -4,13 +4,13 @@ import BaseLayout from "~/layouts/BaseLayout.astro";
 import Header from "~/components/Header.astro";
 import Footer from "~/components/Footer.astro";
 
-const locale = "sk" as const;
-const entry = await getEntry("pages", "sk/for-speakers");
+const locale = "en" as const;
+const entry = await getEntry("pages", "en/program");
 const { Content } = await entry!.render();
 const { title, description, ctaPrimary } = entry!.data;
 ---
 
-<BaseLayout title={`${title} — LIFO 2027`} description={description} locale={locale}>
+<BaseLayout title={`${title} — LIFO 2027`} description={description} locale={locale} ogImage="/og-image-1200x630-en.png">
   <Header locale={locale} />
 
   <main id="main">
@@ -31,7 +31,6 @@ const { title, description, ctaPrimary } = entry!.data;
         <article class="prose-lifo max-w-3xl">
           <Content />
         </article>
-
         {
           ctaPrimary && (
             <div class="mt-12 max-w-3xl">

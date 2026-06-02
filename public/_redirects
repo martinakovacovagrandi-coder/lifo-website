@@ -1,0 +1,5 @@
+# Redirects for renamed pages (preserve old URL shares)
+/pre-sponzorov          /partneri           301
+/pre-spikrov            /program            301
+/en/for-sponsors        /en/partners        301
+/en/for-speakers        /en/program         301

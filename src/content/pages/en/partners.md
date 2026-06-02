@@ -1,5 +1,5 @@
 ---
-title: "For sponsors and partners"
+title: "Partners"
 description: "Become a partner of LIFO 2027 and gain direct access to decision-makers across government, municipalities and the investment community."
 locale: en
 order: 1
@@ -8,7 +8,7 @@ ctaPrimary:
   href: "/en/contact?segment=sponsor"
 ---
 
-# For sponsors and partners
+# LIFO 2027 Partners
 
 **Become a partner of the first seriously curated format where private capital meets investment-ready municipalities.**
 

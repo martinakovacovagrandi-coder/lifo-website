@@ -1,6 +1,6 @@
 ---
-title: "Program konferencie"
-description: "Hľadáme expertov, ktorí dokážu doručiť konkrétne know-how — nie sebaprezentáciu. Vystúpte na LIFO 2027."
+title: "Program"
+description: "Program LIFO 2027 finalizujeme. Zatiaľ hľadáme expertov, ktorí dokážu doručiť konkrétne know-how — nie sebaprezentáciu."
 locale: sk
 order: 1
 ctaPrimary:
@@ -8,7 +8,15 @@ ctaPrimary:
   href: "/kontakt?segment=spiker"
 ---
 
-# Pre rečníkov
+# Program LIFO 2027
+
+> **Program konferencie finalizujeme.** Tu zverejníme keynote a panely, akonáhle budú rečníci potvrdení. Sledujte web alebo sa prihláste na novinky.
+
+---
+
+## Pre potenciálnych rečníkov
+
+**Hľadáme expertov, ktorí dokážu doručiť konkrétne know-how — nie sebaprezentáciu.**
 
 **Hľadáme expertov, ktorí dokážu doručiť konkrétne know-how — nie sebaprezentáciu.**
 

@@ -1,6 +1,6 @@
 ---
-title: "Pre partnerov"
-description: "Stante sa partnerom LIFO 2027 a získajte priamy prístup k rozhodovateľom v samosprávach a investičnom prostredí."
+title: "Partneri"
+description: "Staňte sa partnerom LIFO 2027 a získajte priamy prístup k rozhodovateľom v samosprávach a investičnom prostredí."
 locale: sk
 order: 1
 ctaPrimary:
@@ -8,7 +8,7 @@ ctaPrimary:
   href: "/kontakt?segment=sponzor"
 ---
 
-# Pre sponzorov a partnerov
+# Partneri LIFO 2027
 
 **Stante sa partnerom prvého seriózne kurátorovaného formátu, kde sa stretne súkromný kapitál s pripravenými samosprávami.**
 
