@@ -18,12 +18,18 @@ PUBLIC = REPO / "public"
 SRC_PIKTOGRAM = REPO / "public" / "logos" / "lifo-logo-piktogram.svg"
 SRC_WHITE_PIKTOGRAM = REPO / "public" / "logos" / "lifo-logo-white-piktogram.svg"
 SRC_GRADIENT = REPO / "public" / "logos" / "lifo-logo-gradient.svg"
+SRC_GRADIENT_PIKTOGRAM = REPO / "public" / "logos" / "lifo-logo-gradient-piktogram.svg"
 
 # New brand colors
 PURPLE = (111, 84, 209)      # #6F54D1
 TEAL = (54, 162, 168)        # #36A2A8
 PAPER = (255, 255, 255)
 NAVY = (12, 18, 35)
+
+# Gradient stops (matching grafička's SVG gradient)
+GRAD_PINK = (235, 0, 139)    # #eb008b at ~14%
+GRAD_TEAL = (39, 139, 179)   # #278bb3 at 70%
+GRAD_CYAN = (89, 197, 199)   # #59c5c7 at 100%
 
 
 def render_svg_to_png(svg_path: Path, size: int, recolor_to: tuple = None) -> Image.Image:
@@ -75,6 +81,59 @@ def render_svg_to_png(svg_path: Path, size: int, recolor_to: tuple = None) -> Im
     return img
 
 
+def make_brand_gradient(size: int) -> Image.Image:
+    """Create the LIFO brand gradient matching the SVG definition exactly.
+
+    SVG defines gradient from (419.05, 720.59) → (660.95, 301.62) in viewBox 1080.
+    Stops: 0.14 = pink, 0.70 = teal, 1.00 = cyan.
+    """
+    img = Image.new("RGB", (size, size))
+    pixels = img.load()
+
+    # Gradient line in viewBox coordinates → normalized to [0,1]
+    sx, sy = 419.05 / 1080.0, 720.59 / 1080.0
+    ex, ey = 660.95 / 1080.0, 301.62 / 1080.0
+    dx, dy = ex - sx, ey - sy
+    length_sq = dx * dx + dy * dy
+
+    def interp(c1, c2, u):
+        return (
+            int(c1[0] * (1 - u) + c2[0] * u),
+            int(c1[1] * (1 - u) + c2[1] * u),
+            int(c1[2] * (1 - u) + c2[2] * u),
+        )
+
+    for y in range(size):
+        for x in range(size):
+            nx, ny = x / size, y / size
+            vx, vy = nx - sx, ny - sy
+            t = (vx * dx + vy * dy) / length_sq
+            t = max(0.0, min(1.0, t))
+            # Apply stops: 0.14 = pink, 0.70 = teal, 1.00 = cyan
+            if t <= 0.14:
+                rgb = GRAD_PINK
+            elif t < 0.70:
+                u = (t - 0.14) / (0.70 - 0.14)
+                rgb = interp(GRAD_PINK, GRAD_TEAL, u)
+            else:
+                u = (t - 0.70) / (1.0 - 0.70)
+                rgb = interp(GRAD_TEAL, GRAD_CYAN, u)
+            pixels[x, y] = rgb
+    return img
+
+
+def render_gradient_logo(size: int) -> Image.Image:
+    """Render gradient piktogram: mono shape from SVG + brand gradient fill."""
+    # 1) Render mono purple piktogram → use as mask
+    mono = render_svg_to_png(SRC_PIKTOGRAM, size)
+    mask = mono.split()[3]  # alpha channel = logo mask
+    # 2) Create gradient
+    grad = make_brand_gradient(size).convert("RGBA")
+    # 3) Apply mask to gradient
+    grad.putalpha(mask)
+    return grad
+
+
 def find_bold_font(size: int):
     paths = [
         r"C:\Windows\Fonts\arialbd.ttf",
@@ -112,9 +171,9 @@ def make_og_image(width: int, height: int, lang: str = "sk") -> Image.Image:
             gp[x, y] = (PURPLE[0], PURPLE[1], PURPLE[2], alpha)
     bg.paste(glow, (0, 0), glow)
 
-    # Logo on dark bg — render PURPLE piktogram + recolor to white
+    # Logo on dark bg — gradient piktogram via mask + brand gradient
     logo_size = height - 200
-    logo = render_svg_to_png(SRC_PIKTOGRAM, logo_size, recolor_to=PAPER)
+    logo = render_gradient_logo(logo_size)
     logo_x = 80
     logo_y = (height - logo_size) // 2
     bg.paste(logo, (logo_x, logo_y), logo)
@@ -147,8 +206,8 @@ def make_og_image(width: int, height: int, lang: str = "sk") -> Image.Image:
 
 
 # Render at large size then downscale for sharpness
-print("Rendering favicon sources from grafička SVG...")
-fav_base = render_svg_to_png(SRC_PIKTOGRAM, 512)
+print("Rendering favicon with brand gradient...")
+fav_base = render_gradient_logo(512)
 
 print("Saving favicon set...")
 fav_16 = fav_base.resize((16, 16), Image.LANCZOS)
