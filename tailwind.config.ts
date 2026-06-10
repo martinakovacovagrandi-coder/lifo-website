@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         lifo: {
-          magenta: "#D6307A",
+          magenta: "#6F54D1",
           teal: "#36A2A8",
           ink: "#0A0A0A",
           paper: "#FFFFFF",
@@ -18,7 +18,7 @@ export default {
         body: ["Inter", "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
       },
       backgroundImage: {
-        "lifo-gradient": "linear-gradient(135deg, #D6307A 0%, #36A2A8 100%)",
+        "lifo-gradient": "linear-gradient(135deg, #6F54D1 0%, #36A2A8 100%)",
       },
     },
   },
