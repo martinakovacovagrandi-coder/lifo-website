@@ -1,7 +1,7 @@
 ---
 title: "LIFO 2027"
 subtitle: "Local Innovation Forum"
-tagline: "Not another conference on regional development. The space where capital meets municipalities ready for investment."
+tagline: "The space where capital meets municipalities ready for investment."
 date: "February 11, 2027"
 venue: "Bratislava"
 ctaPrimary:
@@ -21,6 +21,6 @@ order: 1
 
 **Local Innovation Forum**
 
-Not another conference on regional development. The space where **capital** meets **municipalities ready for investment**.
+The space where **capital** meets **municipalities ready for investment**.
 
 **February 11, 2027 · Bratislava**
