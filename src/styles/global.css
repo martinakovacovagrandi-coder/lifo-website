@@ -8,6 +8,7 @@
     --lifo-teal: #36a2a8;
     --lifo-ink: #0a0a0a;
     --lifo-paper: #ffffff;
+    --lifo-canvas: #f8f5fc;
     --lifo-navy: #0c1223;
     --lifo-gradient: linear-gradient(135deg, var(--lifo-magenta) 0%, var(--lifo-teal) 100%);
   }
@@ -19,7 +20,8 @@
   }
 
   body {
-    @apply bg-lifo-paper text-lifo-ink font-body antialiased;
+    @apply text-lifo-ink font-body antialiased;
+    background-color: var(--lifo-canvas);
     line-height: 1.55;
   }
 

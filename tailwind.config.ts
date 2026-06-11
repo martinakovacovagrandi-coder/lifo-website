@@ -10,6 +10,7 @@ export default {
           teal: "#36A2A8",
           ink: "#0A0A0A",
           paper: "#FFFFFF",
+          canvas: "#F8F5FC",
           navy: "#0C1223",
         },
       },
