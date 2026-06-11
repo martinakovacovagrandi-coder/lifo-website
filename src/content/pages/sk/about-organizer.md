@@ -1,25 +1,17 @@
 ---
 title: "Kto stojí za LIFO"
-description: "LIFO pripravuje tím s desiatkami rokov skúseností v strategických investíciách, event manažmente a budovaní odborných platforiem."
+description: "Projektový tím LIFO 2027."
 locale: sk
 order: 5
 ---
 
 # Kto stojí za LIFO
 
-LIFO pripravuje tím s **desiatkami rokov skúseností** v strategických investíciách, event manažmente a budovaní odborných platforiem.
+**Martina Grandi** — ako projektová manažérka spolupracovala na najväčších strategických investíciách na Slovensku za posledných 10 rokov.
 
-## Martina Grandi
+**Andrea Lispúchová** do projektu prináša viac ako 20 rokov skúseností v oblasti event manažmentu, ktoré využíva na budovanie kľúčových partnerských vzťahov a bezchybnú realizáciu platformy.
 
-Projektová manažérka, ktorá za posledných **10 rokov spolupracovala na najväčších strategických investíciách na Slovensku** — vrátane prípravy územia pre **Jaguar Land Rover** (Nitra, 450+ ha) a **Valaliky Industrial Park / Volvo** (380+ ha so spoluprácou viac ako 30 samospráv).
-
-## Andrea Lispúchová
-
-Do projektu prináša **viac ako 20 rokov skúseností** v oblasti event manažmentu, ktoré využíva na **budovanie kľúčových partnerských vzťahov** a **bezchybnú realizáciu** platformy.
-
-## Martin Kadleček
-
-**Spoluzakladateľ a organizátor prestížneho odborného retail festivalu**, ktorý dlhoročne spája komunitu profesionálov v obchode a službách.
+**Martin Kadleček** — spoluzakladateľ a organizátor prestížneho odborného retail festivalu, ktorý dlhoročne spája komunitu profesionálov v obchode a službách.
 
 ---
 
