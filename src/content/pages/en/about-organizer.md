@@ -1,28 +1,28 @@
 ---
 title: "Who's behind LIFO"
-description: "LIFO is led by Martina Grandi, whose track record has shaped Slovakia's largest strategic investments."
+description: "LIFO is built by a team with decades of experience in strategic investments, event management and building professional platforms."
 locale: en
 order: 5
 ---
 
 # Who's behind LIFO
 
-LIFO is led by **Martina Grandi**, whose track record has shaped Slovakia's largest strategic investments of the past decade:
+LIFO is built by a team with **decades of combined experience** across strategic investments, event management and building professional platforms.
 
-## Jaguar Land Rover (Nitra)
+## Martina Grandi
 
-**Land acquisition** management for a **450+ hectare** territory.
+Project manager who over the past **10 years has collaborated on Slovakia's largest strategic investments** — including land preparation for **Jaguar Land Rover** (Nitra, 450+ ha) and **Valaliky Industrial Park / Volvo** (380+ ha in collaboration with more than 30 municipalities).
 
-## Valaliky Industrial Park (Volvo)
+## Andrea Lispúchová
 
-Strategic preparation of a **380+ hectare** territory and **coordination with more than 30 municipalities**.
+Brings **more than 20 years of experience** in event management, leveraged to **build key partnerships** and ensure **flawless execution** of the platform.
 
-## Added value
+## Martin Kadleček
 
-The ability to **accelerate permitting processes** through precise identification of technical and legislative barriers in the region — not in theory, but in practice.
+**Co-founder and organizer of a prestigious professional retail festival** that has long brought together the community of retail and services professionals.
 
 ---
 
-> "Regions don't suffer from a lack of vision — they suffer from chronic failure to execute. LIFO is the place where we close that gap, through concrete matchmaking, not yet another panel discussion."
+> "Regions don't suffer from a lack of vision — they suffer from chronic failure to execute. LIFO is where we close that gap, through concrete matchmaking between partners and regional representatives, not another panel discussion."
 >
-> *— Martina Grandi, LIFO founder*
+> *— Martina Grandi, LIFO co-founder*
