@@ -7,6 +7,8 @@ order: 5
 
 # Kto stojí za LIFO
 
+LIFO pripravuje tím s **desiatkami rokov skúseností** v strategických investíciách, event manažmente a budovaní odborných platforiem.
+
 **Martina Grandi** — ako projektová manažérka spolupracovala na najväčších strategických investíciách na Slovensku za posledných 10 rokov.
 
 **Andrea Lispúchová** do projektu prináša viac ako 20 rokov skúseností v oblasti event manažmentu, ktoré využíva na budovanie kľúčových partnerských vzťahov a bezchybnú realizáciu platformy.

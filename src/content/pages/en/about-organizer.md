@@ -7,6 +7,8 @@ order: 5
 
 # Who's behind LIFO
 
+LIFO is built by a team with **decades of combined experience** across strategic investments, event management and building professional platforms.
+
 **Martina Grandi** — as project manager, she has collaborated on Slovakia's largest strategic investments over the past 10 years.
 
 **Andrea Lispúchová** brings over 20 years of experience in event management to the project, which she leverages to build key partnerships and ensure flawless execution of the platform.
